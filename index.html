@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body class="overflow-x-hidden w-screen font-[Alata]">
+    <header class="relative w-screen h-screen flex flex-col px-[5%] py-[3%]">
+      <!-- bg -->
+      <div class="absolute top-0 left-0 w-full h-full">
+        <img
+          src="images/desktop/image-hero.jpg"
+          alt="hero desktop"
+          class="w-full h-full max-[500px]:hidden"
+        />
+        <img
+          src="images/mobile/image-hero.jpg"
+          alt="hero mobile"
+          class="w-full h-full max-[500px]:block hidden"
+        />
+      </div>
+      <!-- mobile nav -->
+      <nav
+        id="mobileMenu"
+        class="absolute inset-0 max-[600px]:flex flex-col items-center pt-[5%] px-[5%] hidden overflow-hidden"
+      >
+        <div class="flex justify-between items-center w-full">
+          <img src="images/logo.svg" alt="Loopstudios Logo" class="h-[30px]" />
+          <button class="w-7 h-7 cursor-pointer" id="menuButton">
+            <img
+              src="images/icon-hamburger.svg"
+              alt=""
+              id="open"
+              class="w-full h-full"
+            />
+            <img
+              src="images/icon-close.svg"
+              alt=""
+              id="close"
+              class="w-full h-full hidden"
+            />
+          </button>
+        </div>
+        <ul class="hidden flex-col gap-5 text-white mr-auto my-auto text-3xl">
+          <li class="font-[Josefin_Sans]">About</li>
+          <li class="font-[Josefin_Sans]">Careers</li>
+          <li class="font-[Josefin_Sans]">Events</li>
+          <li class="font-[Josefin_Sans]">Products</li>
+          <li class="font-[Josefin_Sans]">Support</li>
+        </ul>
+      </nav>
+      <!-- desktop Nav -->
+      <nav
+        class="relative h-[10%] w-full flex items-center justify-between max-[600px]:hidden"
+      >
+        <img src="images/logo.svg" alt="Loopstudios Logo" class="h-[30px]" />
+        <ul class="flex gap-5 text-sm text-white">
+          <li
+            class="cursor-pointer duration-300 hover:border-b border-white hover:pb-2"
+          >
+            About
+          </li>
+          <li
+            class="cursor-pointer hover:border-b border-white duration-300 hover:pb-2"
+          >
+            Careers
+          </li>
+          <li
+            class="cursor-pointer hover:border-b border-white duration-300 hover:pb-2"
+          >
+            Events
+          </li>
+          <li
+            class="cursor-pointer hover:border-b border-white duration-300 hover:pb-2"
+          >
+            Products
+          </li>
+          <li
+            class="cursor-pointer hover:border-b border-white duration-300 hover:pb-2"
+          >
+            Support
+          </li>
+        </ul>
+      </nav>
+      <!-- content -->
+      <h1
+        id="content"
+        class="p-5 border-[2px] border-white my-auto text-white z-20 w-[330px] text-3xl uppercase font-[Josefin_Sans] max-[500px]:mx-auto"
+      >
+        Immersive experiences that deliver
+      </h1>
+    </header>
+    <article class="relative w-full h-screen max-[600px]:h-max px-[5%] py-[5%]">
+      <img
+        src="images/desktop/image-interactive.jpg"
+        class="w-[60%] h-full max-[600px]:hidden"
+        alt=""
+      />
+      <img
+        src="images/mobile/image-interactive.jpg"
+        class="w-full hidden max-[600px]:block"
+        alt=""
+      />
+      <div
+        class="max-[600px]:w-full w-[350px] h-max bg-white min-[601px]:absolute right-1/6 bottom-10 p-[3%]"
+      >
+        <h1
+          class="text-black text-3xl text-center uppercase mb-4 font-[Josefin_Sans]"
+        >
+          The leader in interactive VR
+        </h1>
+        <p class="text-xs text-grey max-[600px]:text-center">
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </article>
+    <section class="h-max px-[5%] relative flex flex-col">
+      <h1 class="uppercase text-4xl w-full max-[500px]:text-center">
+        Our creations
+      </h1>
+      <main class="flex flex-wrap justify-center py-[20px] w-full gap-2">
+        <div
+          class="w-[180px] h-[300px] max-[650px]:h-[100px] max-[450px]:w-full flex flex-col relative hover:*:opacity-70 cursor-pointer"
+        >
+          <img
+            src="images/desktop/image-deep-earth.jpg"
+            class="max-[650px]:hidden absolute w-full h-full inset-0"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-deep-earth.jpg"
+            class="absolute w-full h-full inset-0 hidden max-[650px]:block"
+            alt=""
+          />
+          <h1
+            class="mt-auto mx-[10%] font-[Josefin_Sans] !opacity-100 relative text-grey text-3xl uppercase"
+          >
+            deep Earth
+          </h1>
+        </div>
+        <div
+          class="w-[180px] h-[300px] max-[650px]:h-[100px] max-[450px]:w-full flex flex-col relative hover:*:opacity-70 cursor-pointer"
+        >
+          <img
+            src="images/desktop/image-night-arcade.jpg"
+            class="max-[650px]:hidden absolute w-full h-full inset-0"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-night-arcade.jpg"
+            class="absolute w-full h-full inset-0 hidden max-[650px]:block"
+            alt=""
+          />
+
+          <h1
+            class="mt-auto mx-[10%] font-[Josefin_Sans] !opacity-100 relative text-grey text-3xl uppercase"
+          >
+            night arcade
+          </h1>
+        </div>
+        <div
+          class="w-[180px] h-[300px] max-[650px]:h-[100px] max-[450px]:w-full flex flex-col relative hover:*:opacity-70 cursor-pointer"
+        >
+          <img
+            src="images/desktop/image-soccer-team.jpg"
+            class="max-[650px]:hidden absolute w-full h-full inset-0"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-soccer-team.jpg"
+            class="absolute w-full h-full inset-0 hidden max-[650px]:block"
+            alt=""
+          />
+
+          <h1
+            class="mt-auto mx-[10%] font-[Josefin_Sans] !opacity-100 relative text-grey text-3xl uppercase"
+          >
+            soccer team VR
+          </h1>
+        </div>
+        <div
+          class="w-[180px] h-[300px] max-[650px]:h-[100px] max-[450px]:w-full flex flex-col relative hover:*:opacity-70 cursor-pointer"
+        >
+          <img
+            src="images/desktop/image-grid.jpg"
+            class="max-[650px]:hidden absolute w-full h-full inset-0"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-grid.jpg"
+            class="absolute w-full h-full inset-0 hidden max-[650px]:block"
+            alt=""
+          />
+
+          <h1
+            class="mt-auto mx-[10%] font-[Josefin_Sans] !opacity-100 relative text-grey text-3xl uppercase"
+          >
+            the grid
+          </h1>
+        </div>
+
+        <div
+          class="w-[180px] h-[300px] max-[650px]:h-[100px] max-[450px]:w-full flex flex-col relative hover:*:opacity-70 cursor-pointer"
+        >
+          <img
+            src="images/desktop/image-from-above.jpg"
+            class="max-[650px]:hidden absolute w-full h-full inset-0"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-from-above.jpg"
+            class="absolute w-full h-full inset-0 hidden max-[650px]:block"
+            alt=""
+          />
+
+          <h1
+            class="mt-auto mx-[10%] font-[Josefin_Sans] !opacity-100 relative text-grey text-3xl uppercase"
+          >
+            from up aboce vr
+          </h1>
+        </div>
+        <div
+          class="w-[180px] h-[300px] max-[650px]:h-[100px] max-[450px]:w-full flex flex-col relative hover:*:opacity-70 cursor-pointer"
+        >
+          <img
+            src="images/desktop/image-pocket-borealis.jpg"
+            class="max-[650px]:hidden absolute w-full h-full inset-0"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-pocket-borealis.jpg"
+            class="absolute w-full h-full inset-0 hidden max-[650px]:block"
+            alt=""
+          />
+
+          <h1
+            class="mt-auto mx-[10%] font-[Josefin_Sans] !opacity-100 relative text-grey text-3xl uppercase"
+          >
+            pocket borealis
+          </h1>
+        </div>
+        <div
+          class="w-[180px] h-[300px] max-[650px]:h-[100px] max-[450px]:w-full flex flex-col relative hover:*:opacity-70 cursor-pointer"
+        >
+          <img
+            src="images/desktop/image-curiosity.jpg"
+            class="max-[650px]:hidden absolute w-full h-full inset-0"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-curiosity.jpg"
+            class="absolute w-full h-full inset-0 hidden max-[650px]:block"
+            alt=""
+          />
+
+          <h1
+            class="mt-auto mx-[10%] font-[Josefin_Sans] !opacity-100 relative text-grey text-3xl uppercase"
+          >
+            the curiosity
+          </h1>
+        </div>
+        <div
+          class="w-[180px] h-[300px] max-[650px]:h-[100px] max-[450px]:w-full flex flex-col relative hover:*:opacity-70 cursor-pointer"
+        >
+          <img
+            src="images/desktop/image-fisheye.jpg"
+            class="max-[650px]:hidden absolute w-full h-full inset-0"
+            alt=""
+          />
+          <img
+            src="images/mobile/image-fisheye.jpg"
+            class="absolute w-full h-full inset-0 hidden max-[650px]:block"
+            alt=""
+          />
+
+          <h1
+            class="mt-auto mx-[10%] font-[Josefin_Sans] !opacity-100 relative text-grey text-3xl uppercase"
+          >
+            make it fisheye
+          </h1>
+        </div>
+      </main>
+      <button
+        class="uppercase border px-5 py-1 text-[14px] block absolute right-[5%] top-[0] mt-[5px] max-[500px]:static mx-auto cursor-pointer hover:bg-black hover:text-white duration-300"
+      >
+        see all
+      </button>
+    </section>
+    <footer
+      class="mt-20 h-max bg-black text-white py-5 px-[5%] flex items-center max-[500px]:justify-center max-[500px]:flex-col"
+    >
+      <section class="max-[500px]:mb-10">
+        <img src="images/logo.svg" class="mb-2 block h-3" />
+        <ul
+          class="flex max-[500px]:flex-col max-[500px]:items-center text-xs gap-2 max-[500px]:text-center"
+        >
+          <li
+            class="cursor-pointer w-max hover:border-b border-white text-grey"
+          >
+            About
+          </li>
+          <li
+            class="cursor-pointer w-max hover:border-b border-white text-grey"
+          >
+            Careers
+          </li>
+          <li
+            class="cursor-pointer w-max hover:border-b border-white text-grey"
+          >
+            Events
+          </li>
+          <li
+            class="cursor-pointer w-max hover:border-b border-white text-grey"
+          >
+            Products
+          </li>
+          <li
+            class="cursor-pointer w-max hover:border-b border-white text-grey"
+          >
+            Support
+          </li>
+        </ul>
+      </section>
+      <section class="ml-auto max-[500px]:m-0 flex flex-col">
+        <div class="mb-1 flex gap-2 ml-auto max-[500px]:mx-auto">
+          <img
+            src="images/icon-facebook.svg"
+            class="w-4 pb-2 cursor-pointer hover:border-b border-white"
+          />
+          <img
+            src="images/icon-twitter.svg"
+            class="w-4 pb-2 cursor-pointer hover:border-b border-white"
+          />
+          <img
+            src="images/icon-pinterest.svg"
+            class="w-4 pb-2 cursor-pointer hover:border-b border-white"
+          />
+          <img
+            src="images/icon-instagram.svg"
+            class="w-4 pb-2 cursor-pointer hover:border-b border-white"
+          />
+        </div>
+        <div class="text-xs text-grey">
+          © 2021 Loopstudios. All rights reserved.
+        </div>
+      </section>
+    </footer>
+    <script src="src/action.js"></script>
+    <!--
+  
+  See all
+ -->
+  </body>
+</html>
